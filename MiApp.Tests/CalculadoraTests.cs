@@ -11,6 +11,13 @@ public class CalculadoraTests
     }
 
     [Fact]
+    public void Restar_DosNumeros_RegresaResta()
+    {
+        var calc = new Calculadora();
+        Assert.Equal(4, calc.Restar(10, 6));
+    }
+
+    [Fact]
     public void Dividir_EntreCero_LanzaExcepcion()
     {
         var calc = new Calculadora();
